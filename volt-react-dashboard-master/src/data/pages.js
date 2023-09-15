@@ -30,7 +30,7 @@ export default [
         "id": 3,
         "name": "Cms",
         "image": SettingsImg,
-        "link": Routes.Cms.path
+        "link": Routes.cms.path
     },
     {
         "id": 4,

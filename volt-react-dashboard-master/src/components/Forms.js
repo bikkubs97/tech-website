@@ -18,6 +18,8 @@ export const GeneralInfoForm = () => {
     subheading5: '',
     subheading6: '',
     subheading7: '',
+    subheading8: '',
+    subheading9: '',
     paragraph4: '',
     paragraph5: '',
     paragraph6: '',
@@ -406,6 +408,40 @@ export const GeneralInfoForm = () => {
               </Form.Group>
             </Col>
           </Row>
+
+          <Row>
+            <Col md={6} className="mb-3">
+              <Form.Group>
+                <Form.Label>Sub heading 8</Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Enter your sub heading 8"
+                  value={formData.subheading8}
+                  onChange={handleChange}
+                  id="subheading8"
+                  name="subheading8"
+                />
+              </Form.Group>
+            </Col>
+            </Row>
+
+            <Row>
+            <Col md={6} className="mb-3">
+              <Form.Group>
+                <Form.Label>Sub heading 9</Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Enter your sub heading 9"
+                  value={formData.subheading9}
+                  onChange={handleChange}
+                  id="subheading9"
+                  name="subheading9"
+                />
+              </Form.Group>
+            </Col>
+            </Row>
 
           <div className="mt-3">
             <Button variant="primary" type="submit" onClick={handleSubmit}>

@@ -1,14 +1,40 @@
 import { useEffect, useState } from "react";
 
 function App() {
-  const [data, setData] = useState({});
+  const [data, setData] = useState({
+    title: "",
+    subtitle: "",
+    heading1: "",
+    paragraph1: "",
+    heading2: "",
+    paragraph2: "",
+    heading3: "",
+    paragraph3: "",
+    subheading1: "",
+    subheading2: "",
+    subheading3: "",
+    subheading4: "",
+    subheading5: "",
+    subheading6: "",
+    subheading7: "",
+    subheading8: "",
+    subheading9: "",
+    paragraph4: "",
+    paragraph5: "",
+    paragraph6: "",
+    paragraph7: "",
+    paragraph8: "",
+    paragraph9: "",
+    paragraph10: "",
+  });
+  
 
   async function fetchData() {
     try {
       const res = await fetch("https://tech-server-x48n.onrender.com/data");
       const parsedData = await res.json();
-      console.log(parsedData);
-      setData(parsedData);
+      console.log(parsedData.data);
+      setData(parsedData.data);
     } catch (err) {
       console.log(err);
     }
@@ -47,10 +73,10 @@ function App() {
       <div className="flex ml-28 h-[100vh]">
         <div className="w-1/2 my-20">
           <h1 className="text-5xl font-bold">
-            Your customized Token For Globally Compliant Distribution Events
+            {data.title}
           </h1>
           <p className="mt-10">
-            Losrem ipsum simply dummy text of typesetting industry
+            {data.subtitle}
           </p>
           <div className="flex mt-10">
             <button className="bg-customGreen text-white border rounded-2xl p-2 w-32 my-5">
@@ -63,62 +89,52 @@ function App() {
       </div>
 
       <h2 className="text-4xl font-bold text-center">
-        What Service we give you
+        {data.heading1}
       </h2>
       <div className="grid grid-cols-3 gap-4 mx-28 my-20 text-center">
         <div className="p-10 border rounded-md">
           <div className="flex justify-center">
             <img className="w-24" src="phone.png" />
           </div>
-          <h4 className="font-bold text-2xl">Easy Booking</h4>
+          <h4 className="font-bold text-2xl">{data.subheading1}</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-            perferendis aperiam iusto expedita facilis cum molestias
-            consequuntur, aliquid laudantium ea.
+           {data.paragraph1}
           </p>
         </div>
         <div className="p-10 border rounded-md">
           <div className="flex justify-center">
             <img className="w-24" src="pool.png" />
           </div>
-          <h4 className="font-bold text-2xl">Swimming pool</h4>
+          <h4 className="font-bold text-2xl">{data.subheading2}</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-            perferendis aperiam iusto expedita facilis cum molestias
-            consequuntur, aliquid laudantium ea.
+            {data.paragraph2}
           </p>
         </div>
         <div className="p-10 border rounded-md">
           <div className="flex justify-center">
             <img className="w-28 h-24" src="rest.png" />
           </div>
-          <h4 className="font-bold text-2xl">Restaurant Home</h4>
+          <h4 className="font-bold text-2xl">{data.subheading3}</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-            perferendis aperiam iusto expedita facilis cum molestias
-            consequuntur, aliquid laudantium ea.
+            {data.paragraph3}
           </p>
         </div>
         <div className="p-10 border rounded-md">
           <div className="flex justify-center">
             <img className="w-24" src="phone.png" />
           </div>
-          <h4 className="font-bold text-2xl">Mobile Payment</h4>
+          <h4 className="font-bold text-2xl">{data.subheading4}</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-            perferendis aperiam iusto expedita facilis cum molestias
-            consequuntur, aliquid laudantium ea.
+            {data.paragraph4}
           </p>
         </div>
         <div className="p-10 border rounded-md">
           <div className="flex justify-center">
             <img className="w-24" src="card.png" />
           </div>
-          <h4 className="font-bold text-2xl">Bank Card Services</h4>
+          <h4 className="font-bold text-2xl">{data.subheading5}</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-            perferendis aperiam iusto expedita facilis cum molestias
-            consequuntur, aliquid laudantium ea.
+            {data.paragraph5}
           </p>
         </div>
 
@@ -126,11 +142,9 @@ function App() {
           <div className="flex justify-center">
             <img className="w-24" src="home.png" />
           </div>
-          <h4 className="font-bold text-2xl">Best Home</h4>
+          <h4 className="font-bold text-2xl">{data.subheading6}</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-            perferendis aperiam iusto expedita facilis cum molestias
-            consequuntur, aliquid laudantium ea.
+           {data.paragraph6}
           </p>
         </div>
       </div>
@@ -139,15 +153,10 @@ function App() {
         <img className="w-1/2" src="research.png" />
         <div className="ml-10">
           <img className="w-20" src="magnifier.png" />
-          <h2 className="font-bold text-2xl m-2">Super Fast Research</h2>
+          <h2 className="font-bold text-2xl m-2">{data.subheading7}</h2>
           <div className="bg-customGreen font-bold py-1 px-4"></div>
           <p className="mt-10">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
-            excepturi ad eaque maiores sunt ipsa fuga, rerum error, perferendis
-            ab ipsum exercitationem doloribus repellat voluptate voluptatum.
-            Illo perspiciatis fuga ipsa impedit dolore reiciendis, laborum
-            distinctio, asperiores odit similique earum iusto at? Eius quasi
-            adipisci itaque perspiciatis, iste nostrum fuga consectetur?
+            {data.paragraph7}
           </p>
         </div>
       </div>
@@ -155,15 +164,10 @@ function App() {
       <div className="flex mx-28 my-20">
         <div>
           <img className="w-20" src="magnifier.png" />
-          <h2 className="font-bold text-2xl m-2">Super Fast Research</h2>
+          <h2 className="font-bold text-2xl m-2">{data.subheading8}</h2>
           <div className="bg-customGreen font-bold py-1 px-4"></div>
           <p className="mt-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-            magnam. Assumenda officiis quisquam iste fugit molestiae deleniti
-            debitis consequatur reiciendis unde ducimus, quaerat tempora ratione
-            cum eveniet. Ducimus adipisci quo neque provident dolores vitae
-            illum veritatis soluta ullam atque aliquid, ea, repellat error earum
-            voluptates doloremque numquam repudiandae nulla velit.
+           {data.paragraph8}
           </p>
         </div>
         <img src="work.png" className="w-1/2" />
@@ -173,21 +177,15 @@ function App() {
         <img className="w-1/2" src="group.png" />
         <div className="ml-5">
           <img className="w-20" src="magnifier.png" />
-          <h2 className="font-bold text-2xl m-2">Super Fast Research</h2>
+          <h2 className="font-bold text-2xl m-2">{data.subheading9}</h2>
           <div className="bg-customGreen font-bold py-1 px-4"></div>
           <p className="mt-10">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Praesentium exercitationem dolor assumenda illum adipisci suscipit,
-            reprehenderit inventore reiciendis laboriosam voluptatem ab a nam
-            voluptates dicta error corporis officiis eos consequatur debitis
-            ullam ex? Consectetur recusandae quae temporibus sint, ipsa
-            consequatur cupiditate voluptas incidunt delectus iste animi optio,
-            architecto sequi suscipit.
+           {data.paragraph9}
           </p>
         </div>
       </div>
 
-      <h2 className="font-bold text-4xl text-center my-20">Pricing Plans</h2>
+      <h2 className="font-bold text-4xl text-center my-20">{data.heading2}</h2>
       <div className="flex mx-28 my-10 gap-10">
         <div className="p-4 w-1/3 border rounded-md">
           <div className="flex">
@@ -289,13 +287,10 @@ function App() {
       <div className="flex px-28 my-20 bg-blue-50">
         <div className="w-1/2">
           <h2 className="font-bold text-4xl mt-32">
-            Next Generation home intelligence is here
+           {data.heading3}
           </h2>
           <p className="mt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magnam
-            aspernatur facilis eius ab accusamus cum nulla adipisci quia illum,
-            iusto delectus ex sint est eos doloremque. Eius delectus sapiente ea
-            laudantium vitae? Et porro nisi minus reiciendis ducimus eligendi!
+            {data.paragraph10}
           </p>
         </div>
         <img src="next.png" alt="image" />
