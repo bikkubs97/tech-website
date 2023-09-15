@@ -1,16 +1,29 @@
-
 import { useEffect } from "react";
 import dataReducer from "./redux/dataReducer";
-import { fetchDataRequest } from "./redux/dataActions";
+import {
+  fetchDataRequest,
+  fetchDataFailure,
+  fetchDataSuccess,
+} from "./redux/dataActions";
 import { useDispatch, useSelector } from "react-redux";
 function App() {
   const dispatch = useDispatch();
-  const data = useSelector((state: ReturnType<typeof dataReducer>) => state.data);
+  const data = useSelector(
+    (state: ReturnType<typeof dataReducer>) => state.data
+  );
 
   useEffect(() => {
-    dispatch(fetchDataRequest()); // Dispatch the action to fetch data using fetchDataRequest
-  }, [dispatch]);
+    dispatch(fetchDataRequest());
 
+    fetch("https://tech-server-x48n.onrender.com/data")
+      .then((response) => response.json())
+      .then((data) => {
+        dispatch(fetchDataSuccess(data.data));
+      })
+      .catch((error) => {
+        dispatch(fetchDataFailure(error));
+      });
+  }, [dispatch]);
   return (
     <>
       <nav className="flex mt-10 ml-28">
@@ -235,9 +248,7 @@ function App() {
         <img src="next.png" alt="image" />
       </div>
 
-      <h2 className="font-bold text-4xl mt-20 text-center">
-        {data.heading4}
-      </h2>
+      <h2 className="font-bold text-4xl mt-20 text-center">{data.heading4}</h2>
       <p className="text-center m-8">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
         reiciendis?
