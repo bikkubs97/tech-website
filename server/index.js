@@ -33,7 +33,7 @@ app.post("/users", async (req, res) => {
     const user = new User({
       name: req.body.name,
       password: hashedPassword,
-      data: req.body.data,
+      data: {}
     });
     await user.save();
     res.status(201).send("success!");
