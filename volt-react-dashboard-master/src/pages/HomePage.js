@@ -88,7 +88,7 @@ const RouteWithSidebar = ({ component: Component, ...rest }) => {
         <Sidebar />
 
         <main className="content">
-          <Navbar />
+          {localStorage.getItem('token')&&<Navbar />}
           <Component {...props} />
           <Footer toggleSettings={toggleSettings} showSettings={showSettings} />
         </main>

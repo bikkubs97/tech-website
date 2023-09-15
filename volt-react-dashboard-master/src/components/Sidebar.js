@@ -99,9 +99,9 @@ export default (props = {}) => {
             </div>
             <Nav className="flex-column pt-3 pt-md-0">
               <NavItem title="Tech-Website Dashboard" />
+              
           
             
-              <NavItem title="CMS" icon={faCog} link={Routes.Cms.path} />
              
             
            

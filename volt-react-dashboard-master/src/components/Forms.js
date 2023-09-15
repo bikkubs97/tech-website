@@ -27,26 +27,32 @@ export const GeneralInfoForm = () => {
     paragraph10: '',
   });
 
-  const handleSubmit = (event) => {
+  function handleSubmit(event) {
     event.preventDefault();
-
-    fetch('https://cms-server-29mo.onrender.com/data', {
+    
+    // Retrieve token from localStorage
+    const token = localStorage.getItem('token');
+    
+    fetch('https://tech-server-x48n.onrender.com/users/data', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}` // Include the token in the request headers
       },
       body: JSON.stringify(formData),
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('Success:', data);
-        window.alert('Update Suceessful!');
+      .then(function(response) {
+        return response.json();
       })
-      .catch((error) => {
+      .then(function(data) {
+        console.log('Success:', data);
+        window.alert('Update Successful!');
+      })
+      .catch(function(error) {
         console.error('Error:', error);
       });
-  };
-
+  }
+  
   const handleChange = (event) => {
     setFormData({
       ...formData,
