@@ -10,6 +10,7 @@ export const GeneralInfoForm = () => {
     heading2: '',
     paragraph2: '',
     heading3: '',
+    heading4: '',
     paragraph3: '',
     subheading1: '',
     subheading2: '',
@@ -191,6 +192,8 @@ export const GeneralInfoForm = () => {
               </Form.Group>
             </Col>
           </Row>
+
+          
 
           <Row>
             <Col md={6} className="mb-3">
@@ -442,6 +445,23 @@ export const GeneralInfoForm = () => {
               </Form.Group>
             </Col>
             </Row>
+
+            <Row>
+            <Col md={6} className="mb-3">
+              <Form.Group>
+                <Form.Label>Heading 4</Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Enter your heading 4"
+                  value={formData.heading4}
+                  onChange={handleChange}
+                  id="heading4"
+                  name="heading4"
+                />
+              </Form.Group>
+            </Col>           
+          </Row>
 
           <div className="mt-3">
             <Button variant="primary" type="submit" onClick={handleSubmit}>
