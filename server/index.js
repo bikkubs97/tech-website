@@ -27,7 +27,6 @@ db.once("open", () => {
   console.log("connected to mongoose!!");
 });
 
-
 app.post("/users", async (req, res) => {
   try {
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
@@ -70,6 +69,23 @@ app.get("/users", authenticateToken, async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).send("Error getting users");
+  }
+});
+
+app.get('/data', async (req, res) => {
+  try {
+    const firstUser = await User.findOne().lean();
+    
+    if (!firstUser) {
+      return res.status(404).send('No user found');
+    }
+    
+    const data = firstUser.data; // Take the data from the first user
+    
+    res.json({ data });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error getting data');
   }
 });
 

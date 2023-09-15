@@ -1,4 +1,23 @@
+import { useEffect, useState } from "react";
+
 function App() {
+  const [data, setData] = useState({});
+
+  async function fetchData() {
+    try {
+      const res = await fetch("https://tech-server-x48n.onrender.com/data");
+      const parsedData = await res.json();
+      console.log(parsedData);
+      setData(parsedData);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, []);
+
   return (
     <>
       <nav className="flex mt-10 ml-28">
@@ -267,7 +286,7 @@ function App() {
         </div>
       </div>
 
-      <div className="flex mx-28 my-20">
+      <div className="flex px-28 my-20 bg-blue-50">
         <div className="w-1/2">
           <h2 className="font-bold text-4xl mt-32">
             Next Generation home intelligence is here
