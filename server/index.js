@@ -92,7 +92,7 @@ app.get('/data', async (req, res) => {
 app.put("/users/data", authenticateToken, async (req, res) => {
   try {
     const userName = req.name;
-    const newData = req.body.data;
+    const newData = req.body;
     const updatedUser = await User.findOneAndUpdate(
       { name: userName },
       { data: newData },
