@@ -148,9 +148,9 @@ function App() {
             <img className="w-10 h-10" src="arrow.png " />
             <h3 className="font-bold text-3xl m-2 text-customGreen">Premium</h3>
           </div>
-          <p>Lite Plan</p>
+          <p>Premium Plan</p>
           <span>
-            <span className="font-bold text-2xl">$11</span>/month for user
+            <span className="font-bold text-2xl">$21</span>/month for user
           </span>
           <br />
           <button className="bg-customGreen px-5 my-4 text-white">
@@ -212,9 +212,9 @@ function App() {
             <img className="w-10 h-10" src="arrow.png " />
             <h3 className="font-bold text-3xl m-2 text-customGreen">Pro</h3>
           </div>
-          <p>Lite Plan</p>
+          <p>Pro Plan</p>
           <span>
-            <span className="font-bold text-2xl">$11</span>/month for user
+            <span className="font-bold text-2xl">$51</span>/month for user
           </span>
           <br />
           <button className="bg-customGreen px-5 my-4 text-white">
