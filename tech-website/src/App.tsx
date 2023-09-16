@@ -26,7 +26,7 @@ function App() {
   }, [dispatch]);
   return (
     <div className="mx-4 my-5 md:my-0 md:ml-0">
-      <nav className="md:flex md:mt-10 md:ml-28">
+      <nav className="md:flex md:mt-10 md:mx-28">
         <div className="flex md:w-1/2">
           <img className="w-12" src="round.png" />
           <h1 className="font-bold text-2xl m-2">Warkhu</h1>
