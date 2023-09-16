@@ -31,20 +31,20 @@ function App() {
           <img className="w-12" src="round.png" />
           <h1 className="font-bold text-2xl m-2">Warkhu</h1>
         </div>
-        <ul className="flex md:ml-24 h-10 mt-2 md:mt-0">
-          <li className="md:ml-8  hover:text-customGreen hover:cursor-pointer">
+        <ul className="flex md:ml-24 h-10 mt-2 md:mt-0 ">
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer">
             Blog
           </li>
-          <li className="ml-8  hover:text-customGreen hover:cursor-pointer">
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer">
             Services
           </li>
-          <li className="ml-8  hover:text-customGreen hover:cursor-pointer">
-            About Us
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer">
+            About
           </li>
-          <li className="ml-8  hover:text-customGreen hover:cursor-pointer">
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer">
             Career
           </li>
-          <li className="ml-8  hover:text-customGreen hover:cursor-pointer">
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer">
             Contact
           </li>
         </ul>
@@ -141,7 +141,9 @@ function App() {
         </div>
       </div>
 
-      <h2 className="font-bold text-4xl text-center md:my-20">{data.heading2}</h2>
+      <h2 className="font-bold text-4xl text-center md:my-20">
+        {data.heading2}
+      </h2>
       <div className="md:flex mx-2 md:mx-28 my-10 gap-10">
         <div className="p-4 md:w-1/3 border rounded-md">
           <div className="flex">
