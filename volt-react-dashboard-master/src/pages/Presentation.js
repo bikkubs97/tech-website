@@ -129,7 +129,9 @@ export default () => {
 
   return (
     <>
+    
       <div className="d-flex flex-column justify-content-center align-items-center text-center text-md-center mb-4 mt-md-0" style={{ minHeight: '50vh' }}>
+      <img src="hero.jpg" className="w-25 h-25  m-4" alt="Hero" />
   <h3 className="mb-0">Welcome to Tech Web site Content Management System</h3>
   <p>Please Login in to Edit content</p>
   <Button
