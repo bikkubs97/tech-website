@@ -25,14 +25,14 @@ function App() {
       });
   }, [dispatch]);
   return (
-    <>
-      <nav className="flex mt-10 ml-28">
-        <div className="flex w-1/2">
+    <div className="mx-4 my-5 md:my-0 md:ml-0">
+      <nav className="md:flex md:mt-10 md:ml-28">
+        <div className="flex md:w-1/2">
           <img className="w-12" src="round.png" />
           <h1 className="font-bold text-2xl m-2">Warkhu</h1>
         </div>
-        <ul className="flex ml-24 h-10">
-          <li className="ml-8  hover:text-customGreen hover:cursor-pointer">
+        <ul className="flex md:ml-24 h-10 mt-2 md:mt-0">
+          <li className="md:ml-8  hover:text-customGreen hover:cursor-pointer">
             Blog
           </li>
           <li className="ml-8  hover:text-customGreen hover:cursor-pointer">
@@ -50,8 +50,8 @@ function App() {
         </ul>
       </nav>
 
-      <div className="flex ml-28 h-[100vh]">
-        <div className="w-1/2 my-20">
+      <div className="flex md:ml-28 h-[100vh]">
+        <div className="w-1/2 md:my-20">
           <h1 className="text-5xl font-bold">{data.title}</h1>
           <p className="mt-10">{data.subtitle}</p>
           <div className="flex mt-10">
@@ -64,8 +64,8 @@ function App() {
         <img className="hidden md:block" src="hero.jpg" />
       </div>
 
-      <h2 className="text-4xl font-bold text-center">{data.heading1}</h2>
-      <div className="grid grid-cols-3 gap-4 mx-28 my-20 text-center">
+      <h2 className="text-4xl font-bold md:text-center">{data.heading1}</h2>
+      <div className="md:grid grid-cols-3 gap-4 md:mx-28 md:my-20 text-center">
         <div className="p-10 border rounded-md">
           <div className="flex justify-center">
             <img className="w-24" src="phone.png" />
@@ -111,9 +111,9 @@ function App() {
         </div>
       </div>
 
-      <div className="flex mx-28 my-20">
-        <img className="w-1/2" src="research.png" />
-        <div className="ml-10">
+      <div className="md:flex mx-2 md:mx-28 my-20">
+        <img className="md:w-1/2" src="research.png" />
+        <div className="md:ml-10">
           <img className="w-20" src="magnifier.png" />
           <h2 className="font-bold text-2xl m-2">{data.subheading7}</h2>
           <div className="bg-customGreen font-bold py-1 px-4"></div>
@@ -121,18 +121,18 @@ function App() {
         </div>
       </div>
 
-      <div className="flex mx-28 my-20">
-        <div className="w-1/2">
+      <div className="md:flex mx-2 md:mx-28 my-20">
+        <div className="md:w-1/2">
           <img className="w-20" src="magnifier.png" />
           <h2 className="font-bold text-2xl m-2">{data.subheading8}</h2>
           <div className="bg-customGreen font-bold py-1 px-4"></div>
           <p className="mt-10">{data.paragraph8}</p>
         </div>
-        <img src="work.png" className="w-1/2" />
+        <img src="work.png" className="md:w-1/2" />
       </div>
 
-      <div className="flex mx-28 my-20">
-        <img className="w-1/2" src="group.png" />
+      <div className="md:flex mx-2 md:mx-28 my-20">
+        <img className="md:w-1/2" src="group.png" />
         <div className="ml-5">
           <img className="w-20" src="magnifier.png" />
           <h2 className="font-bold text-2xl m-2">{data.subheading9}</h2>
@@ -141,9 +141,9 @@ function App() {
         </div>
       </div>
 
-      <h2 className="font-bold text-4xl text-center my-20">{data.heading2}</h2>
-      <div className="flex mx-28 my-10 gap-10">
-        <div className="p-4 w-1/3 border rounded-md">
+      <h2 className="font-bold text-4xl text-center md:my-20">{data.heading2}</h2>
+      <div className="md:flex mx-2 md:mx-28 my-10 gap-10">
+        <div className="p-4 md:w-1/3 border rounded-md">
           <div className="flex">
             <img className="w-10 h-10" src="arrow.png " />
             <h3 className="font-bold text-3xl m-2 text-customGreen">Premium</h3>
@@ -175,7 +175,7 @@ function App() {
           </button>
         </div>
 
-        <div className="p-4 w-1/3 border rounded-md">
+        <div className="p-4 md:w-1/3 border rounded-md">
           <div className="flex">
             <img className="w-10 h-10" src="arrow.png " />
             <h3 className="font-bold text-3xl m-2 text-customGreen">Lite</h3>
@@ -207,7 +207,7 @@ function App() {
           </button>
         </div>
 
-        <div className="p-4 w-1/3 border rounded-md">
+        <div className="p-4 md:w-1/3 border rounded-md">
           <div className="flex">
             <img className="w-10 h-10" src="arrow.png " />
             <h3 className="font-bold text-3xl m-2 text-customGreen">Pro</h3>
@@ -240,8 +240,8 @@ function App() {
         </div>
       </div>
 
-      <div className="flex px-28 my-20 bg-blue-50">
-        <div className="w-1/2">
+      <div className="md:flex px-2 mr-2 md:mr-0 md:px-28 md:my-20 bg-blue-50">
+        <div className="md:w-1/2">
           <h2 className="font-bold text-4xl mt-32">{data.heading3}</h2>
           <p className="mt-5">{data.paragraph10}</p>
         </div>
@@ -276,7 +276,7 @@ function App() {
           <p className="m-4 text-center">Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
