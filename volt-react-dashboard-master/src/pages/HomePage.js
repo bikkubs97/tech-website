@@ -5,7 +5,6 @@ import { Routes } from "../routes";
 // pages
 import Presentation from "./Presentation";
 import Upgrade from "./Upgrade";
-import DashboardOverview from "./dashboard/DashboardOverview";
 import Transactions from "./Transactions";
 import cms from "./cms";
 import BootstrapTables from "./tables/BootstrapTables";
@@ -102,10 +101,7 @@ const RouteWithSidebar = ({ component: Component, ...rest }) => {
           <main className="content">
             {localStorage.getItem("token") && <Navbar />}
             <Component {...props} />
-            <Footer
-              toggleSettings={toggleSettings}
-              showSettings={showSettings}
-            />
+            
           </main>
         </>
       )}
