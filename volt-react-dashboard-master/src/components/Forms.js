@@ -112,7 +112,7 @@ export const GeneralInfoForm = () => {
                     <Form.Control
                       required
                       type="text"
-                      placeholder="Enter your hero heading"
+                      placeholder="Enter your heading1"
                       value={formData.heading1}
                       onChange={handleChange}
                       id="heading1"
