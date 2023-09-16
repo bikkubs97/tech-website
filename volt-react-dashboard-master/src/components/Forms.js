@@ -64,8 +64,12 @@ export const GeneralInfoForm = () => {
     });
   };
 
+  const isLoggedIn = localStorage.getItem('token');
+  console.log(isLoggedIn)
+
   return (
-    <Card border="light" className="bg-white shadow-sm mb-4">
+    <>
+    {isLoggedIn ? (<Card border="light" className="bg-white shadow-sm mb-4">
       <Card.Body>
         <h5 className="mb-4">Edit The Content</h5>
         <Form onSubmit={handleSubmit}>
@@ -470,6 +474,7 @@ export const GeneralInfoForm = () => {
           </div>
         </Form>
       </Card.Body>
-    </Card>
-  );
+    </Card>):<p>You must Login first!</p>}
+    </>)
+  
 };

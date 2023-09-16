@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faUnlockAlt } from "@fortawesome/free-solid-svg-icons";
 import { Col, Row, Form, InputGroup, Button, Container } from '@themesberg/react-bootstrap';
@@ -13,6 +13,15 @@ export default () => {
   });
   const [message, setMessage] = useState("");
   const history = useHistory();
+
+  useEffect(() => {
+    // Check if token is present in localStorage
+    const token = localStorage.getItem("token");
+    if (token) {
+      // Redirect to the "Cms" page
+      history.push("/Cms");
+    }
+  }, [history]);
 
   async function handleSubmit(event) {
     event.preventDefault();
