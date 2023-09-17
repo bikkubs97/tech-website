@@ -32,19 +32,19 @@ function App() {
           <h1 className="font-bold text-2xl m-2">Warkhu</h1>
         </div>
         <ul className="flex md:ml-24 h-10 mt-2 md:mt-0 ">
-          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer">
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer hover:text-white">
             Blog
           </li>
-          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer">
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer  hover:text-white">
             Services
           </li>
-          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer">
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer  hover:text-white">
             About
           </li>
-          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer">
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer  hover:text-white">
             Career
           </li>
-          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer">
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:border md:rounded-2xl hover:bg-customGreen hover:cursor-pointer  hover:text-white">
             Contact
           </li>
         </ul>
