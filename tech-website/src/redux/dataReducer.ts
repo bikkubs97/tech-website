@@ -38,8 +38,8 @@ import {
   
   // Define the initial data state with default values for all properties
   const initialData: DataShape = {
-    title: 'Default Title',
-    subtitle: 'Default Subtitle',
+    title: 'Your customized Token For Globally Compliant Distribution Events',
+    subtitle: 'Lorem Ipsum is simply dummy text of the printing',
     heading1: 'Default Heading 1',
     paragraph1: 'Default Paragraph 1',
     heading2: 'Default Heading 2',
