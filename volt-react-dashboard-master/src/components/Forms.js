@@ -65,7 +65,7 @@ export const GeneralInfoForm = () => {
   };
 
   const isLoggedIn = localStorage.getItem("token");
-  console.log(isLoggedIn);
+
 
   return (
     <>
