@@ -55,7 +55,7 @@ function App() {
           <h1 className="text-5xl font-bold ">{data.title}</h1>
           <p className="mt-10">{data.subtitle}</p>
           <div className="flex mt-10">
-            <button className="bg-customGreen text-white border rounded-2xl  p-2 md:w-32 md:my-5 h-14">
+            <button className="bg-customGreen text-white border rounded-2xl  p-2 md:w-32 md:my-5 h-14  hover:shadow-lg">
               Get Started
             </button>
             <img
@@ -71,35 +71,35 @@ function App() {
         {data.heading1}
       </h2>
       <div className="md:grid grid-cols-3 gap-4 md:mx-28 md:my-12 text-center">
-        <div className="p-10 border rounded-md">
+        <div className="p-10 border rounded-md hover:border-customGreen hover:cursor-pointer">
           <div className="flex justify-center">
             <img className="w-24" src="phone.png" />
           </div>
           <h4 className="font-bold text-2xl">{data.subheading1}</h4>
           <p>{data.paragraph1}</p>
         </div>
-        <div className="p-10 border rounded-md">
+        <div className="p-10 border rounded-md hover:border-customGreen hover:cursor-pointer">
           <div className="flex justify-center">
             <img className="w-24" src="pool.png" />
           </div>
           <h4 className="font-bold text-2xl">{data.subheading2}</h4>
           <p>{data.paragraph2}</p>
         </div>
-        <div className="p-10 border rounded-md">
+        <div className="p-10 border rounded-md hover:border-customGreen hover:cursor-pointer">
           <div className="flex justify-center">
             <img className="w-28 h-24" src="rest.png" />
           </div>
           <h4 className="font-bold text-2xl">{data.subheading3}</h4>
           <p>{data.paragraph3}</p>
         </div>
-        <div className="p-10 border rounded-md">
+        <div className="p-10 border rounded-md hover:border-customGreen hover:cursor-pointer">
           <div className="flex justify-center">
             <img className="w-24" src="phone.png" />
           </div>
           <h4 className="font-bold text-2xl">{data.subheading4}</h4>
           <p>{data.paragraph4}</p>
         </div>
-        <div className="p-10 border rounded-md">
+        <div className="p-10 border rounded-md hover:border-customGreen hover:cursor-pointer">
           <div className="flex justify-center">
             <img className="w-24" src="card.png" />
           </div>
@@ -107,7 +107,7 @@ function App() {
           <p>{data.paragraph5}</p>
         </div>
 
-        <div className="p-10 border rounded-md">
+        <div className="p-10 border rounded-md hover:border-customGreen hover:cursor-pointer">
           <div className="flex justify-center">
             <img className="w-24" src="home.png" />
           </div>
@@ -150,7 +150,7 @@ function App() {
         {data.heading2}
       </h2>
       <div className="md:flex mx-2 md:mx-28 my-10 gap-10">
-        <div className="p-4 md:w-1/3 border rounded-md">
+        <div className="p-4 md:w-1/3 border rounded-md hover:border-customGreen hover:cursor-pointer">
           <div className="flex">
             <img className="w-10 h-10" src="arrow.png " />
             <h3 className="font-bold text-3xl m-2 text-customGreen">Premium</h3>
@@ -182,7 +182,7 @@ function App() {
           </button>
         </div>
 
-        <div className="p-4 md:w-1/3 border rounded-md">
+        <div className="p-4 md:w-1/3 border rounded-md hover:border-customGreen hover:cursor-pointer">
           <div className="flex">
             <img className="w-10 h-10" src="arrow.png " />
             <h3 className="font-bold text-3xl m-2 text-customGreen">Lite</h3>
@@ -214,7 +214,7 @@ function App() {
           </button>
         </div>
 
-        <div className="p-4 md:w-1/3 border rounded-md">
+        <div className="p-4 md:w-1/3 border rounded-md hover:border-customGreen hover:cursor-pointer">
           <div className="flex">
             <img className="w-10 h-10" src="arrow.png " />
             <h3 className="font-bold text-3xl m-2 text-customGreen">Pro</h3>
