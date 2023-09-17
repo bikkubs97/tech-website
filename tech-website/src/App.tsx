@@ -25,7 +25,7 @@ function App() {
       });
   }, [dispatch]);
   return (
-    <div className="mx-4 my-5 md:my-0 md:ml-0">
+    <div className="px-4 md:px-0 md:mx-4 my-5 md:my-0 md:ml-0">
       <nav className="md:flex md:mt-10 md:mx-28">
         <div className="flex md:w-1/2">
           <img className="w-12" src="round.png" />
@@ -52,21 +52,21 @@ function App() {
 
       </nav>
 
-      <div className="flex md:ml-28 h-[100vh]">
-        <div className="w-1/2 md:my-20">
+      <div className="flex md:ml-28 md:h-[100vh] mb-5 md:mb-0">
+        <div className="md:w-1/2  md:my-20">
           <h1 className="text-5xl font-bold">{data.title}</h1>
           <p className="mt-10">{data.subtitle}</p>
           <div className="flex mt-10">
-            <button className="bg-customGreen text-white border rounded-2xl p-2 w-32 my-5">
+            <button className="bg-customGreen text-white border rounded-2xl  p-2 md:w-32 md:my-5 h-14">
               Get Started
             </button>
-            <img className="w-24 h-10 my-6 mx-10" src="pulse.png" />
+            <img className="w-24 h-10 my-6 mx-10 hidden md:block" src="pulse.png" />
           </div>
         </div>
         <img className="hidden md:block" src="hero.jpg" />
       </div>
 
-      <h2 className="text-4xl font-bold md:text-center">{data.heading1}</h2>
+      <h2 className="text-4xl font-bold text-center">{data.heading1}</h2>
       <div className="md:grid grid-cols-3 gap-4 md:mx-28 md:my-20 text-center">
         <div className="p-10 border rounded-md">
           <div className="flex justify-center">
@@ -257,22 +257,22 @@ function App() {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
         reiciendis?
       </p>
-      <div className="flex gap-2 justify-center mx-28 my-10">
-        <div className=" w-1/3">
+      <div className="md:flex gap-2 justify-center mx-28 my-10">
+        <div className="md:w-1/3">
           <div className="flex justify-center">
             <img className="w-40" src="profile.png" alt="image" />
           </div>
           <h3 className="font-bold text-2xl text-center">Name</h3>
           <p className="m-4 text-center">Lorem ipsum dolor sit amet.</p>
         </div>
-        <div className=" w-1/3">
+        <div className=" md:w-1/3">
           <div className="flex justify-center">
             <img className="w-40" src="profile.png" alt="image" />
           </div>
           <h3 className="font-bold text-2xl text-center">Name</h3>
           <p className="m-4 text-center">Lorem ipsum dolor sit amet.</p>
         </div>
-        <div className=" w-1/3">
+        <div className="md:w-1/3">
           <div className="flex justify-center">
             <img className="w-40" src="profile.png" alt="image" />
           </div>
