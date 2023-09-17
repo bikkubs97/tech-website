@@ -7,7 +7,7 @@ Server is implemented using Node.js, Express and Mongo DB. JWT is used for authe
 Content management system is implemented using the template : https://github.com/themesberg/volt-react-dashboard
 with react and bootstrap.
 
-using the template users can dynamically update the content of the webpage.
+using the CMS, users can dynamically update the content of the webpage.
 
 Live links
 ..........
