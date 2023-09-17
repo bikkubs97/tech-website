@@ -52,9 +52,9 @@ function App() {
 
       </nav>
 
-      <div className="flex md:ml-28 md:h-[100vh] mb-5 md:mb-0">
+      <div className="md:flex md:ml-28 md:h-[100vh] mb-5 md:mb-0">
         <div className="md:w-1/2  md:my-20">
-          <h1 className="text-5xl font-bold">{data.title}</h1>
+          <h1 className="text-5xl font-bold ">{data.title}</h1>
           <p className="mt-10">{data.subtitle}</p>
           <div className="flex mt-10">
             <button className="bg-customGreen text-white border rounded-2xl  p-2 md:w-32 md:my-5 h-14">
@@ -63,10 +63,10 @@ function App() {
             <img className="w-24 h-10 my-6 mx-10 hidden md:block" src="pulse.png" />
           </div>
         </div>
-        <img className="hidden md:block" src="hero.jpg" />
+        <img className="" src="hero.jpg" />
       </div>
 
-      <h2 className="text-4xl font-bold text-center">{data.heading1}</h2>
+      <h2 className="text-4xl font-bold text-center pb-2 md:pb-0">{data.heading1}</h2>
       <div className="md:grid grid-cols-3 gap-4 md:mx-28 md:my-20 text-center">
         <div className="p-10 border rounded-md">
           <div className="flex justify-center">
@@ -246,7 +246,7 @@ function App() {
 
       <div className="md:flex px-2 mr-2 md:mr-0 md:px-28 md:my-20 bg-blue-50">
         <div className="md:w-1/2">
-          <h2 className="font-bold text-4xl mt-32">{data.heading3}</h2>
+          <h2 className="font-bold text-4xl mt-32 pt-6 md:pt-0">{data.heading3}</h2>
           <p className="mt-5">{data.paragraph10}</p>
         </div>
         <img src="next.png" alt="image" />
