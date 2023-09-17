@@ -32,24 +32,22 @@ function App() {
           <h1 className="font-bold text-2xl m-2">Warkhu</h1>
         </div>
         <ul className="flex md:ml-24 h-10 mt-2 md:mt-0 ">
-  <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:bg-customGreen hover:cursor-pointer hover:text-white md:rounded-2xl border border-transparent">
-    Blog
-  </li>
-  <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:bg-customGreen hover:cursor-pointer hover:text-white md:rounded-2xl border border-transparent">
-    Services
-  </li>
-  <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:bg-customGreen hover:cursor-pointer hover:text-white md:rounded-2xl border border-transparent">
-    About
-  </li>
-  <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:bg-customGreen hover:cursor-pointer hover:text-white md:rounded-2xl border border-transparent">
-    Career
-  </li>
-  <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:bg-customGreen hover:cursor-pointer hover:text-white md:rounded-2xl border border-transparent">
-    Contact
-  </li>
-</ul>
-
-
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:bg-customGreen hover:cursor-pointer hover:text-white md:rounded-2xl border border-transparent">
+            Blog
+          </li>
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:bg-customGreen hover:cursor-pointer hover:text-white md:rounded-2xl border border-transparent">
+            Services
+          </li>
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:bg-customGreen hover:cursor-pointer hover:text-white md:rounded-2xl border border-transparent">
+            About
+          </li>
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:bg-customGreen hover:cursor-pointer hover:text-white md:rounded-2xl border border-transparent">
+            Career
+          </li>
+          <li className="md:ml-8 ml-1 md:px-4 md:pt-2 hover:bg-customGreen hover:cursor-pointer hover:text-white md:rounded-2xl border border-transparent">
+            Contact
+          </li>
+        </ul>
       </nav>
 
       <div className="md:flex md:ml-28 md:h-[100vh] mb-5 md:mb-0">
@@ -60,14 +58,19 @@ function App() {
             <button className="bg-customGreen text-white border rounded-2xl  p-2 md:w-32 md:my-5 h-14">
               Get Started
             </button>
-            <img className="w-24 h-10 my-6 mx-10 hidden md:block" src="pulse.png" />
+            <img
+              className="w-24 h-10 my-6 mx-10 hidden md:block"
+              src="pulse.png"
+            />
           </div>
         </div>
         <img className="" src="hero.jpg" />
       </div>
 
-      <h2 className="text-4xl font-bold text-center pb-2 md:pb-0">{data.heading1}</h2>
-      <div className="md:grid grid-cols-3 gap-4 md:mx-28 md:my-20 text-center">
+      <h2 className="text-4xl font-bold text-center pb-2 md:pb-0">
+        {data.heading1}
+      </h2>
+      <div className="md:grid grid-cols-3 gap-4 md:mx-28 md:my-12 text-center">
         <div className="p-10 border rounded-md">
           <div className="flex justify-center">
             <img className="w-24" src="phone.png" />
@@ -246,7 +249,9 @@ function App() {
 
       <div className="md:flex px-2 mr-2 md:mr-0 md:px-28 md:my-20 bg-blue-50">
         <div className="md:w-1/2">
-          <h2 className="font-bold text-4xl mt-32 pt-6 md:pt-0">{data.heading3}</h2>
+          <h2 className="font-bold text-4xl mt-32 pt-6 md:pt-0">
+            {data.heading3}
+          </h2>
           <p className="mt-5">{data.paragraph10}</p>
         </div>
         <img src="next.png" alt="image" />
